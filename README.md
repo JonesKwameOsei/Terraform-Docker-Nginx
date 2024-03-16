@@ -162,9 +162,20 @@ docker ps
 ```
 ![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/d7045073-1813-4d08-87b7-0549c3a38e70) <p>
 
-We will utilise the **web browser** to test the **NGINX Server container** by visiting **localhost:8000**.
+We will utilise the **web browser** to test the **NGINX Server container** by visiting **localhost:8000**.<p>
 ![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/35b87dcb-233e-4f95-a458-561873d7cf9e)
+### Destroy Infrastructure
+Once the infrastructure is no longer needed, **Terraform**, can destroy the infrastructure it manages. Since the container is in use, we will delete it then run the destroy command as below.
+```
+terraform destroy
+```
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/ab34201e-22f6-4135-8ff4-cd50e85aada9) <p>
+Finally, let us confirm from the Docker Desktop app on Windows to ascertain if the resource has been indeed destroyed by **Terraform**.
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/bac88a37-77a8-422f-abfd-263ac7ffdf2d) <p>
+All **NGINX** resources has been succesfully destroyed as shown above. 
 
+## Conclusion
+In this project, we configured and utilised **Terraform** to provision an **Nginx Server** using **Docker**. 
 
 
 

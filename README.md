@@ -8,7 +8,7 @@ We will have to [install docker for Windows](https://docs.docker.com/docker-for-
 - Search for Docker Desktop in the search results or Start menu.<p>
 ![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/18658e53-4265-4b25-a7fa-e7e3e20f7742)
 - Open Docker: Click on the **open icon** to open Docker. Here, the **Whale icon** in the status bar stays steady indicating Docker Desktop is up-and-running. <p>
-- ![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/7496bfde-eed0-4619-88e8-49f921a26539)<p>
+- ![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/7496bfde-eed0-4619-88e8-49f921a26539) <p>
 **NB**: For other operating systems, install **Docker Engine** for [Linux distro](https://docs.docker.com/engine/install/) and Docker [Destop for Mac](https://docs.docker.com/docker-for-mac/install/) to follow this project. To start Docker on Mac, run:
 ```
 open -a Docker

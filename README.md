@@ -153,7 +153,7 @@ We will confirm in the **Docker Destop**. <p>
 The Nginx Docker Image.<p>
 ![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/b045dca7-ef07-4332-9773-224ff9ea59ab) <p>
 The Nginx Docker Container.<p>
-![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/e525665d-d809-4c19-9b3f-b46362a64593) <p>
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/ddfe2dec-5d7e-455a-b47b-6331209adc93) <p>
 
 ### Test the NGINX Server
 We will this time verify the exisitence of the **NGINX container** by running the command below.

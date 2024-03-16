@@ -1,4 +1,6 @@
 # Provisioning an Nginx server with Terraform Using Docker
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/36bfc59b-1557-4e51-ba42-4decbccf12a6)
+
 ## Overview of Project
 This exercise is to utilise **terraform** to provision an **nginx server**. Nginx server can be provisioned on Mac, Windows, or Linux. For this exercise, we will provision the nginx server on Windows. <p>
 ### Pre-requisite 

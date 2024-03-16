@@ -130,6 +130,41 @@ Since the plugins are in hidden files in the directory, we will run:
 ls -a
 ```
 ![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/b43ac648-83be-496e-856a-6cc64dbda636) <p>
+**Terraform** downloads the **docker** provider and installs it in a hidden subdirectory of the working directory, named **.terraform**. Also, the command, **terraform init**, creates a lock file known as **.terraform.lock.hcl** which shows the exact provider versions used. This makes it possible to have control on updating the providers used for building the infrastructure. 
+### Provision the NGINX Server Container
+1. First let us check to see all the resources to be built are exactlywhat we configured running:
+```
+terraform plan
+```
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/5ec8a859-ac77-4f46-aa44-2409e5600943) <p>
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/8bf9d174-b219-486e-b66e-680c8d7b8dd7) <p>
+If all resources to be built (resources with + sign will be created by terraform) meets our configuration requirements, we can go ahead with the next step. 
+
+2. To provision the **Nginx Server Container**, we will run the **Terraform** command below, confirm by typing **yes** and then press **enter**. 
+```
+terraform apply
+```
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/64627f11-7860-426a-9d94-ae0c6e97abd4)
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/d1a1dca9-42ba-4a5a-accd-c70b86928ac6)
+
+**Terraform** has successfuly applied and created 2 resources, **Docker Container ID** and **Docker Image**.<p>
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/1c852d79-096f-4098-a968-61ff4ca19586)<p>
+We will confirm in the **Docker Destop**. <p>
+The Nginx Docker Image.<p>
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/b045dca7-ef07-4332-9773-224ff9ea59ab) <p>
+The Nginx Docker Container.<p>
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/e525665d-d809-4c19-9b3f-b46362a64593) <p>
+
+### Test the NGINX Server
+We will this time verify the exisitence of the **NGINX container** by running the command below.
+```
+docker ps
+```
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/d7045073-1813-4d08-87b7-0549c3a38e70) <p>
+
+We will utilise the **web browser** to test the **NGINX Server container** by visiting **localhost:8000**.
+![image](https://github.com/JonesKwameOsei/Terraform-Docker-Nginx/assets/81886509/35b87dcb-233e-4f95-a458-561873d7cf9e)
+
 
 
 
